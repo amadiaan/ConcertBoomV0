@@ -1,0 +1,594 @@
+.navbar{
+    background: linear-gradient(-90deg, #af5379, #af4552);
+}
+
+p{
+    font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link.dropdown-toggle{
+    color: #525252 !important;
+}
+.navbar-dark .dropdown-toggle::after{
+    display: none;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 21px;
+    text-shadow: 0 2px 2px #00000080;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFF;
+    font-size: 14px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.navbar #navbarSupportedContent form input{
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    padding-left:40px;
+    width: 200px !important;
+}
+.navbar #navbarSupportedContent form{
+    position: relative;
+}
+.navbar #navbarSupportedContent form button{
+    position: absolute;
+    padding: 0;
+    font-size: 18px;
+    top: -2px;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+.navbar .signupButton,.ticketButton{
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    background: #db1c32;
+    padding: 3px 15px 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+   
+}
+.navbar .signupButton:hover{
+    color: #db1c32;
+    background: #FFF;
+     transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+   
+}
+.navbar .loginButton{
+    color: #FFF;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.banner{
+    background: linear-gradient(-90deg, #ff3372, #db1c32);
+    color: #FFF;
+    text-align: center;
+}
+.banner img{
+    box-shadow: 0 6px 20px #00000080;
+}
+.banner h1{
+    font-size: 2em;
+    text-shadow: 0 3px 4px #00000080;
+}
+.banner h5{
+    font-size: 1em;
+}
+.banner a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.banner a span{
+    font-size: 20px;
+}
+
+/* navbar X icon css */  
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #FFF;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggler{
+    padding: 0;
+    border: none;
+    outline: 0;
+    margin-right: 7px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-toggler:focus{
+    outline: 0;
+}
+
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggler .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggler.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/* navbar X icon css end */ 
+.navbar #navbarSupportedContent form input,.navbar form button{
+    display: none !important;
+}
+#searhbutton{
+    cursor: pointer;
+}
+.contain-section .d-flex h5:first-child{
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    
+}
+.contain-section .d-flex h5:first-child span,.contain-section .d-flex h5:first-child i{
+    color: #db1c32;  
+}
+.contain-section .d-flex h5:last-child img{
+    margin-right: 8px;
+}
+.contain-section hr.boldline{
+border-top: 2px solid #db1c32;
+}
+.filter-section span,.similarartist-section span{
+    font-size: 14px;
+    color:  #525252;
+}
+.filter-section h5{
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+.ticketButton{
+    font-size: 16px;
+    background: transparent;
+    color: #db1c32;
+    padding: 10px 25px 10px 25px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.filter-section hr{
+    border-top: 1px solid rgba(0,0,0,.20);
+    margin: 10px 0;
+}
+.filter-section a.ticketButton:hover{
+   color: #db1c32;
+    text-decoration: none;
+}
+.events-section {
+  padding-right: 80px;
+  padding-left: 30px;
+  
+}
+
+.col-md-8 h5.text-uppercase.text-center{
+    color: #db1c32;
+}
+.links-section a h5{
+    text-transform: uppercase;
+    color: #212529;
+    text-decoration: none; 
+}
+.links-section a:hover h5{
+    color: #db1c32;
+}
+.links-section a{
+    text-decoration: none;
+    display: inline-block;
+}
+.links-section span{
+    color: #db1c32;
+    font-size: 30px;
+    margin-right: 10px;
+}
+footer{
+    background: linear-gradient(-90deg, #ff3372, #db1c32);
+    height: 180px;
+}
+.sanfranciscoButton{
+    margin: auto;
+    color: #db1c32;
+    background: #FFF;
+    text-align: center;
+    box-shadow: 0 2px 6px #0006;
+    padding: 13px 15px;
+    display: inline-block;
+    border-radius: 35px;  
+}
+.sanfranciscoButton:hover{
+    color: #db1c32;
+    text-decoration: none;
+}
+.sanfranciscoButton i{
+    margin-right: 7px;
+}
+#navbarDropdown img{
+    margin-top: -3px;
+}
+.similarartist-section hr.mt-4{
+    margin-top: 27px !important;
+}
+.similarartist-section h5{
+    letter-spacing: 1.2px;
+}
+.homepage .banner{
+    background: url('../img/party.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding-top: 90px !important;
+    
+}
+.homepage .banner .overlay{
+    position: absolute;
+    background: linear-gradient(-90deg, #ff3372, #db1c32);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: .9;  
+}
+.homepage .navbar{
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.homepage .banner input{
+border-radius: 40px;
+height: 50px;
+line-height: 50px;
+padding-left: 45px;
+width: 100%;
+}
+.homepage .banner .btn{
+position: absolute;
+    cursor: default;
+padding: 0;
+padding-left: 0px;
+font-size: 18px;
+top: -5px;
+bottom: 0;
+padding-left: 15px;
+}
+.homepage .banner img{
+    box-shadow: none;
+}
+.homepage .banner input::-moz-placeholder{
+    color: #8f8f8f;
+}
+.homepage .banner input::-webkit-input-placeholder{
+    color: #8f8f8f;
+}
+.homepage .banner form{
+    padding: 100px 0;
+}
+.homepage .contain-section a.text-dark{
+    color: #212529 !important;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+.item img{
+    cursor: pointer;	
+}
+
+.mb-3 {
+    cursor: pointer;	
+}  
+
+/* Styling Pagination*/
+.owl-theme .owl-dots,.owl-theme .owl-nav {
+ text-align:center;
+ -webkit-tap-highlight-color:transparent;
+    margin-top: 25px;
+}
+.owl-theme .owl-nav {
+ margin-top:10px;
+    color:#db1c32;
+}
+.owl-theme .owl-nav [class*=owl-] {
+ color:#FFF;
+ font-size:14px;
+ background:#D6D6D6;
+ display:inline-block;
+ cursor:pointer;
+ border-radius:3px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+ background:#869791;
+ color:#FFF;
+ text-decoration:none
+}
+.owl-theme .owl-nav .disabled {
+ opacity:.5;
+ color: #525252 !important;
+ cursor:default;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+ margin-top:10px
+}
+.owl-theme .owl-dots .owl-dot {
+ display:inline-block;
+ zoom:1
+}
+.owl-theme .owl-dots .owl-dot span {
+ width:10px;
+ height:10px;
+ margin:5px 7px;
+ background:#D6D6D6;
+ display:block;
+ -webkit-backface-visibility:visible;
+ transition:opacity .2s ease;
+ border-radius:30px
+}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span {
+ background:#db1c32;
+}
+.owl-prev{
+position: absolute;
+top: 30%;
+font-size: 2.5em !important;
+left: 0;
+font-size:44px;
+color:#E4E4E4;
+
+}
+
+.owl-prev:hover, .owl-next:hover{
+	color:#db1c32 !important;
+    outline: none;
+    background: transparent !important;
+}
+
+.owl-next{
+position: absolute;
+top: 30%;
+font-size:44px;
+right:0;
+font-size: 2.5em !important;
+color:#E4E4E4;
+}
+
+.owl-carousel{
+    padding: 0 30px;
+}
+.owl-item img{
+    border-radius: 50%;
+    padding: 5px;
+}
+.owl-item div{
+    padding-left: 8px;
+}
+.owl-item div h5{
+ text-transform: uppercase;
+margin-bottom: 0;
+    letter-spacing: 1.2px;
+}
+.owl-item div span{
+    font-size: 14px;
+color: #525252;
+}
+.upcomingevntsSections .col-md.col-6.mt-4.mb-3 span{
+font-size: 14px;
+color: #525252;
+}
+
+.upcomingEventsButton{
+    color: #db1c32;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.upcomingEventsButton:hover{
+    color: #db1c32;
+}
+.upcomingEventsButton h5{
+    letter-spacing: 1.2px;
+}
+.homepage .navbar .position-absolute{
+    left: 0;
+    right:0;
+    top: 0;
+    text-align: center;
+    padding-top: 8px;
+    display: inline-block;
+}
+.homepage #navbarSupportedContent{
+    background: linear-gradient(-90deg, #af5379, #af4552);
+    padding-left:12px;
+}
+.homepage .navbar-toggler{
+    z-index: 2;
+}
+.homepage .seemoreButton{
+    color: #db1c32;
+}
+.homepage .similarartist-section hr.boldline{
+border-top: 2px solid #db1c32;
+}
+.homepage .bold-title{
+    color: #db1c32;
+    font-size: 1.25rem;
+}
+.citypage .banner h1{
+    letter-spacing: .7px;
+    font-size: 2em;
+    padding: 73px 0;
+}
+.citypage .zindex{
+    z-index:2;
+}
+.moreButton{
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #db1c32;
+}
+.moreButton:hover{
+    color: #db1c32;
+     text-decoration: none;
+}
+.citypage .timingbox{
+    background: linear-gradient(-90deg, #ff3372, #db1c32);
+    color: #FFF;
+    padding-top: 8px;
+    font-size: 14px;
+}
+.citypage .timingbox .table-bordered tr td{
+    border-top: none;
+    border-left: none;
+    
+}
+.citypage .timingbox .table-bordered tr:last-child td{
+     border-bottom: none;
+}
+.citypage .timingbox .table-bordered tr td:last-child{
+    border-right: none;
+}
+.citypage .timingbox .table-bordered {
+    border-top: none;
+     border-left: none; 
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+.citypage .timingbox .mt-2{
+    text-align: center;
+    padding-bottom: 20px;  
+}
+.citypage .timingbox .mt-2 span{
+    color: #FFF;
+}
+.citypage .timingbox .mt-2 p{
+    padding: 10px 0;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+.citypage .venues p{
+    border-width: 2px !important;
+}
+.citypage .venues .col-5 p{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.citypage .similarartist-section hr.boldline{
+margin-top: 28px !important;
+}
+.citypage .fontsize{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    
+}
+.citypage .similarartist-section h5.text-uppercase{
+       font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 576px) {
+ 
+}
+@media (min-width: 768px) {
+    .citypage .banner h1{
+   font-size: 4em;
+
+   text-align: center;
+}
+    .banner .row .col-lg-6:last-child{
+        padding-left: 0;
+    }
+
+
+    .filter-section a.ticketButton:hover{
+    color: #FFF;
+    background: #525252;
+    text-decoration: none;
+}
+    .ticketButton{
+    background: #db1c32;
+    color: #FFF;
+    }
+.banner{
+    text-align: left;
+    }
+    .banner h1{
+    font-size: 4em;
+}
+.banner h5{
+    font-size: 1.95em;
+}
+
+    
+}
+@media (min-width: 992px) {
+    .citypage .similarartist-section hr.boldline{
+margin-top: 10px !important;
+}
+    .homepage #navbarSupportedContent{
+    background: none;
+    padding-left:inherit;
+}
+    .homepage .navbar{
+    background: linear-gradient(-90deg, #af5379b3, #af4552b3);
+    }
+    .homepage .navbar .position-absolute{
+        display: none;
+    }
+        .navbar #navbarSupportedContent form input,.navbar form button{
+    display: inherit !important;
+}
+    .navbar form i {
+    padding-top: 6px;
+    }
+}
+@media (min-width: 1200px) {
+
+/*    .citypage .similarartist-section hr.boldline{
+margin-top: 28px !important;
+}  */
+    
+}
+
