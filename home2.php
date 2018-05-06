@@ -1,208 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-	
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-
-    <title>Website</title>
-  </head>
-  <body class="homepage">
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-      <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-      <div class="position-absolute">
-      <a class="navbar-brand mr-0" href="#">Logo</a>
-      </div>
-      
-   
-
-
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">San Francisco Concerts <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Artists</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="img/countrylocation.png" width="10"> Change Location
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">United Kingdom</a>
-          <a class="dropdown-item" href="#">USA</a>
-          </div>
-          </li>
-          </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" aria-label="Search">
-          <button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20" class="mt-1"></a></button>
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="signupButton">Sign Up</a></li>
-            <li class="nav-item  mt-2 mt-lg-0"><a href="#" class="loginButton">Log in</a></li>
-          </ul>
-        </form>
-      </div>
-      </div>
-    </nav>
-
-
-    <div class="row no-gutters banner py-5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-        <div class="col-md-6 offset-md-3 col-10 offset-1 col-sm-10 offset-sm-1">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" aria-label="Search" placeholder="search by artist, city or venue">
-              <button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20" class="mt-1"></a></button>
-            </form>
-        </div>
-      
-      </div>
-
-
-      </div>
-
-
-    </div>
-
-<!-- for mobile -->
-
-
-<div class="row no-gutters contain-section mt-5 d-md-none d-block">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 d-lg-none">
-            <div class="d-flex">
-            <h5><img src="img/map-marker.png" width="20"> popular events <span>san francisco</span></h5>
-            
-            </div>
-            <hr class="boldline">
-          <div class="filter-section">
-            <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
-              </div>
-              <div class="col-3">
-                 
-                <h5>Artist</h5>
-                <span>Location</span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-          <hr>
-
-          <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
-              </div>
-              <div class="col-3">
-                 
-                <h5>Artist</h5>
-                <span>Location</span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-
-            <hr>
-
-            <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
-              </div>
-              <div class="col-3">
-                 
-                <h5>Artist</h5>
-                <span>Location</span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-
-            <hr>
-
-            <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
-              </div>
-              <div class="col-3">
-                 
-                <h5>Artist</h5>
-                <span>Location</span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-
-            <hr>
-
-            <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
-              </div>
-              <div class="col-3">
-                 
-                <h5>Artist</h5>
-                <span>Location</span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-            <hr>
-            <div class="text-center mt-3 d-md-none">
-            <a href="#" class="sanfranciscoButton"><h5><img src="img/map-marker.png" width="20"> san francisco</h5></a>
-            </div>
-            <div class="text-center mt-3 d-md-none">
-            <a href="#" class="seemoreButton"><h5> see more</h5></a>
-            </div>
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
 
 <?php
 
@@ -213,7 +11,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-
+$CURRENT_YEAR = '2018';
 $date = getDate();
 $dateNow = $date['year'] . '-' . $date['mon'] . '-' . $date['mday'];
 
@@ -222,6 +20,11 @@ $imgarr = array();
 $artistname = array();
 $performancedate = array();
 $performancecity = array();
+$event_slug = array();
+$monthNum = array();
+$monthName = array();
+$dateObj = array();
+
 while($row = mysqli_fetch_array($result))
 {
 	$performerCbSlug = $row['performer_slug_cb'];
@@ -232,8 +35,18 @@ while($row = mysqli_fetch_array($result))
 	$row2 = mysqli_fetch_array($result2);
 	{
 		$performancedate[] = $row2['event_start_time'];
+		$monthNum[] = substr($row2['event_start_time'] , 5 , 2);
 		$performancecity[] = $row2['city_name']; 
+		$event_slug[] = $row2['event_slug'];
 	}
+}
+
+
+foreach($monthNum AS $num)
+{
+	$dateObj = DateTime::createFromFormat('!m', $num);
+	$monthName[] = $dateObj->format('F');
+	
 }
 
 
@@ -241,6 +54,7 @@ $imgarr2 = array();
 $artistname2 = array();
 $performancedate2 = array();
 $performancecity2 = array();
+
 $checkActiveArtists = mysqli_query($con,"select * from ZV_PERFORMER WHERE performer_type = 'MUSIC_PERFORMER' order by performer_facebook_like desc limit 8");
 while ($res = mysqli_fetch_array($checkActiveArtists)) {
 	$performerCbSlug2 = $res['performer_slug_cb'];
@@ -259,6 +73,10 @@ $imgarr3 = array();
 $artistname3 = array();
 $performancedate3 = array();
 $performancecity3 = array();
+$event_slug3 = array();
+$monthNum3 = array();
+$monthName3 = array();
+$dateObj3 = array();
 
 $checkCity =  mysqli_query($con,"select * from ZV_CITY WHERE city_slug = 'oakland' ORDER BY city_population desc limit 1");
 $infoCity = mysqli_fetch_array($checkCity);
@@ -281,13 +99,227 @@ while ($info = mysqli_fetch_array($check)) {
          $res2 = mysqli_fetch_array($cityandtime);
         {
                 $performancedate3[] = $res2['event_start_time'];
+		$monthNum3[] = substr($res2['event_start_time'] , 5 , 2);
                 $performancecity3[] = $res2['city_name'];
+		$event_slug3[] = $res2['event_slug'];
         }
+
+}
+
+foreach($monthNum3 AS $num)
+{
+        $dateObj3 = DateTime::createFromFormat('!m', $num);
+        $monthName3[] = $dateObj3->format('F');
 
 }
 
 mysqli_close($con);
 ?>
+
+	
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+
+    <title>Website</title>
+  </head>
+  <body class="homepage">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+      <img src="img/CBlogo.png" width="35" style="border-radius: 30%;">
+      <a class="navbar-brand d-none d-lg-block" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <div class="position-absolute">
+      <a class="navbar-brand mr-0" href="#"></a>
+      </div>
+      
+   
+
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!--<a class="nav-link" href="#">San Francisco Concerts <span class="sr-only">(current)</span></a>-->
+          </li>
+          <li class="nav-item">
+            <!--<a class="nav-link" href="#">Artists</a>-->
+
+          </li>
+          <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="img/countrylocation.png" width="10"> Change Location
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">United Kingdom</a>
+          <a class="dropdown-item" href="#">USA</a>
+          </div>
+          </li>-->
+          </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20"></a></button>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="signupButton">Sign Up</a></li>
+            <li class="nav-item  mt-2 mt-lg-0"><a href="#" class="loginButton">Log in</a></li>
+          </ul>
+        </form>
+      </div>
+      </div>
+    </nav>
+
+
+    <div class="row no-gutters banner py-5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+        <div class="col-md-6 offset-md-3 col-10 offset-1 col-sm-10 offset-sm-1">
+	    <h1>CONCERTBOOM</h1>
+            <!--<form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" aria-label="Search" placeholder="search by artist, city or venue">
+              <button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20" class="mt-1"></a></button>
+            </form>-->
+        </div>
+      
+      </div>
+
+
+      </div>
+
+
+    </div>
+
+<!-- for mobile -->
+
+
+<div class="row no-gutters contain-section mt-5 d-md-none d-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-lg-none">
+            <div class="d-flex">
+            <!--<h5><img src="img/map-marker.png" width="20"> popular events <span>san francisco</span></h5>-->
+            <h5>popular events</h5>
+            </div>
+            <hr class="boldline">
+          <div class="filter-section">
+            <div class="row">
+              <div class="col-4">
+                <span><?php echo substr($performancedate[0], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate[0], 10 , 6);?></span>
+              </div>
+              <div class="col-3">
+                 
+                <h5><?php echo $artistname[0];?></h5>
+                <span><?php echo $performancecity[0];?></span>
+              </div>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity[0]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[0]?>&event_slug=<?php echo $event_slug[0]?>" class="ticketButton">Tickets</a>
+              </div>
+
+            </div>
+          <hr>
+
+          <div class="row">
+              <div class="col-4">
+                <span><?php echo substr($performancedate[1], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate[1], 10 , 6);?></span>
+              </div>
+              <div class="col-3">
+                 
+                <h5><?php echo $artistname[1];?></h5>
+                <span><?php echo $performancecity[1];?></span>
+              </div>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity[1]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[1]?>&event_slug=<?php echo $event_slug[1]?>" class="ticketButton">Tickets</a>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-4">
+                <span><?php echo substr($performancedate[2], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate[2], 10 , 6);?></span>
+              </div>
+              <div class="col-3">
+                 
+                <h5><?php echo $artistname[2];?></h5>
+                <span><?php echo $performancecity[2];?></span>
+              </div>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity[2]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[2]?>&event_slug=<?php echo $event_slug[2]?>" class="ticketButton">Tickets</a>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-4">
+                <span><?php echo substr($performancedate[3], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate[3], 10 , 6);?></span>
+              </div>
+              <div class="col-3">
+                 
+                <h5><?php echo $artistname[3];?></h5>
+                <span><?php echo $performancecity[3];?></span>
+              </div>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity[3]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[3]?>&event_slug=<?php echo $event_slug[3]?>" class="ticketButton">Tickets</a>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-4">
+                <span><?php echo substr($performancedate[4], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate[4], 10 , 6);?></span>
+              </div>
+              <div class="col-3">
+                 
+                <h5><?php echo $artistname[4];?></h5>
+                <span><?php echo $performancecity[4];?></span>
+              </div>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity[3]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[3]?>&event_slug=<?php echo $event_slug[3]?>" class="ticketButton">Tickets</a>
+              </div>
+
+            </div>
+            <hr>
+            <div class="text-center mt-3 d-md-none">
+            <!--<a href="#" class="sanfranciscoButton"><h5><img src="img/map-marker.png" width="20"> san francisco</h5></a>-->
+            </div>
+            <div class="text-center mt-3 d-md-none">
+            <!--<a href="#" class="seemoreButton"><h5> see more</h5></a>-->
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 <div class="row no-gutters d-md-none d-block">
   <div class="container">
@@ -297,48 +329,48 @@ mysqli_close($con);
             <hr class="boldline mt-4">
             <div class="row">
               <div class="col-6">
-                <img src=" <?php echo $imgarr[0];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[0];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[0];?>','_self');">
                 <div class="mb-3">
-                <span> Date </span><br>
-                <span>Location</span>
+                <span> </span><br>
+                <span></span>
                 </div>
               </div>
               <div class="col-6">
-                <img src=" <?php echo $imgarr[1];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[1];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[1];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
               <div class="col-6">
-                <img src=" <?php echo $imgarr[2];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[2];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[2];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
               <div class="col-6">
-                <img src=" <?php echo $imgarr[3];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[3];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[3];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
 
               <div class="col-6">
-                <img src=" <?php echo $imgarr[4];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[4];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[4];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
               <div class="col-6">
-                <img src=" <?php echo $imgarr[5];?> " class="img-fluid rounded-circle mt-2">
+                <img src=" <?php echo $imgarr2[5];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $artistname2[4];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
@@ -347,42 +379,42 @@ mysqli_close($con);
              <!-- up coming near san francisco-->
         <div class="mt-5">
           <div class="d-flex">
-            <h5 class="text-uppercase"> up coming near <span class="bold-title">san francisco</span></h5>
-            
+            <!--<h5 class="text-uppercase"> up coming near <span class="bold-title">san francisco</span></h5>-->
+            <h5 class="text-uppercase"> up coming</h5>
             </div>
             <hr class="boldline">
           <div class="filter-section">
             <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[0], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[0], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[0];?></h5>
+                <span><?php echo $performancecity3[0];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[0]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[0]?>&event_slug=<?php echo $event_slug3[0]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
           <hr>
 
           <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[1], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[1], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[1];?></h5>
+                <span><?php echo $performancecity3[1];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[1]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[1]?>&event_slug=<?php echo $event_slug3[1]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
@@ -390,18 +422,18 @@ mysqli_close($con);
             <hr>
 
             <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[2], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[2], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[2];?></h5>
+                <span><?php echo $performancecity3[2];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[2]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[2]?>&event_slug=<?php echo $event_slug3[2]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
@@ -409,18 +441,18 @@ mysqli_close($con);
             <hr>
 
             <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[3], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[3], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[3];?></h5>
+                <span><?php echo $performancecity3[3];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[3]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[3]?>&event_slug=<?php echo $event_slug3[3]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
@@ -428,18 +460,18 @@ mysqli_close($con);
 
           
             <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[4], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[4], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[4];?></h5>
+                <span><?php echo $performancecity3[4];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[4]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[4]?>&event_slug=<?php echo $event_slug3[4]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
@@ -447,25 +479,25 @@ mysqli_close($con);
 
           
             <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5>Date</h5>
-                <span>Time</span>
+              <div class="col-4">
+                <span><?php echo substr($performancedate3[5], 0 , 10);?></span>
+                <h5></h5>
+                <span><?php echo substr($performancedate3[5], 10 , 6);?></span>
               </div>
               <div class="col-3">
                  
-                <h5>Artist</h5>
-                <span>Location</span>
+                <h5><?php echo $artistname3[5];?></h5>
+                <span><?php echo $performancecity3[5];?></span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-5 text-right">
+                <a href="ticket.php?city=<?php echo $performancecity3[5]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName3[5]?>&event_slug=<?php echo $event_slug3[5]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
             <hr>
           
           </div>
-          <h5 class="text-uppercase text-center mt-3 mb-5 mb-md-0 seemoreButton">see all</h5>
+          <!--<h5 class="text-uppercase text-center mt-3 mb-5 mb-md-0 seemoreButton">see all</h5>-->
           </div>
 
             
@@ -483,8 +515,9 @@ mysqli_close($con);
         <div class="row">
           <div class="col-sm-12">
             <div class="d-flex">
-            <h5> popular events <span>san francisco</span></h5>
-            <h5 class="ml-auto d-none d-md-block"><img src="img/map-marker.png" width="20"><a href="#" class="text-dark">Change Location</a></h5>
+            <!--<h5> popular events <span>san francisco</span></h5>-->
+	    <h5> popular events</h5>
+            <!--<h5 class="ml-auto d-none d-md-block"><img src="img/map-marker.png" width="20"><a href="#" class="text-dark">Change Location</a></h5>-->
             </div>
             <hr class="boldline">
           
@@ -649,8 +682,8 @@ mysqli_close($con);
         <div class="col-sm-12 mt-5 upcomingevntsSections">
             
             <div class="d-flex">
-            <h5> up coming events near <span>san francisco</span></h5>
-            
+            <!--<h5> up coming events near <span>san francisco</span></h5>-->
+            <h5> up coming events</h5>
             </div>
             
             
@@ -747,7 +780,7 @@ mysqli_close($con);
             </div>
               
               <div class="text-center">
-              <a href="#" class="upcomingEventsButton"><h5> see all upcoming events near you</h5></a>
+              <!--<a href="#" class="upcomingEventsButton"><h5> see all upcoming events near you</h5></a>-->
             </div>
               
               </div>

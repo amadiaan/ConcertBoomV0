@@ -106,14 +106,15 @@ mysqli_close($con);
 
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-      <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
+      <img src="img/CBlogo.png" width="35" style="border-radius: 30%;">
+      <a class="navbar-brand d-none d-lg-block" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       </button>
       <div class="position-absolute">
-      <a class="navbar-brand mr-0" href="#">Logo</a>
+      <a class="navbar-brand mr-0" href="#"></a>
       </div>
 
       <ul class="list-inline d-lg-none mb-0 zindex ">
@@ -131,10 +132,10 @@ mysqli_close($con);
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php echo ucfirst($citySlug)?> Concerts <span class="sr-only">(current)</span></a>
+            <!--<a class="nav-link" href="#"><?php /*echo ucfirst($citySlug)*/?> Concerts <span class="sr-only">(current)</span></a>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Artists</a>
+            <!--<a class="nav-link" href="#">Artists</a>-->
           </li>
           <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -159,12 +160,13 @@ mysqli_close($con);
     </nav>
 
 
-    <div class="row no-gutters banner py-5">
+    <div class="row no-gutters banner py-5" style="height:220px;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
-        <div class="col-12">
-            <h1 class="text-uppercase mt-3 mt-md-0"> <?php echo $city;?>  2018 events</h1>
+        <div class="col-12" style="margin-top: -65px;">
+            <!--<h1 class="text-uppercase mt-3 mt-md-0" style="font-size: 3.4em;"> <?php echo $city;?>  2018 events</h1>-->
+	    <h1 class="text-uppercase mt-3 mt-md-0" > <?php echo $city;?>  2018 events</h1>
         </div>
       
       </div>
@@ -359,7 +361,7 @@ mysqli_close($con);
               <div class="filter-section">
                 <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[0];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[0]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[0]?>&event_slug=<?php echo $event_slug2[0]?>','_self');">
+                   <img src="<?php echo $imgarr2[0];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[0]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[0]?>&event_slug=<?php echo $event_slug2[0]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -376,7 +378,7 @@ mysqli_close($con);
 
               <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[1];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[1]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[1]?>&event_slug=<?php echo $event_slug2[1]?>','_self');">
+                   <img src="<?php echo $imgarr2[1];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[1]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[1]?>&event_slug=<?php echo $event_slug2[1]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -393,7 +395,7 @@ mysqli_close($con);
 
                    <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[2];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[2]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[2]?>&event_slug=<?php echo $event_slug2[2]?>','_self');">
+                   <img src="<?php echo $imgarr2[2];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[2]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[2]?>&event_slug=<?php echo $event_slug2[2]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -402,7 +404,7 @@ mysqli_close($con);
                     <span><?php echo $city;?></span>
                   </div>
                   <div class="col-md-7 col-4 text-right pt-3">
-                    <a href="ticket.php?city=<?php echo $city2[1]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[1]?>&event_slug=<?php echo $event_slug2[1]?>" class="ticketButton">Tickets</a>
+                    <a href="ticket.php?city=<?php echo $city2[2]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[2]?>&event_slug=<?php echo $event_slug2[2]?>" class="ticketButton">Tickets</a>
                   </div>
 
                 </div>
@@ -410,7 +412,7 @@ mysqli_close($con);
 
                    <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[3];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[3]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[3]?>&event_slug=<?php echo $event_slug2[3]?>','_self');">
+                   <img src="<?php echo $imgarr2[3];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[3]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[3]?>&event_slug=<?php echo $event_slug2[3]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -427,7 +429,7 @@ mysqli_close($con);
 
                 <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[4];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[4]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[4]?>&event_slug=<?php echo $event_slug2[4]?>','_self');">
+                   <img src="<?php echo $imgarr2[4];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[4]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[4]?>&event_slug=<?php echo $event_slug2[4]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -444,7 +446,7 @@ mysqli_close($con);
 
               <div class="row">
                   <div class="col-md-2 col-4">
-                   <img src="<?php echo $imgarr2[5];?>" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[5]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[5]?>&event_slug=<?php echo $event_slug2[5]?>','_self');">
+                   <img src="<?php echo $imgarr2[5];?>" style="cursor: pointer" class="img-fluid rounded-circle" onclick="window.open('ticket.php?city=<?php echo $city2[5]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName2[5]?>&event_slug=<?php echo $event_slug2[5]?>','_self');">
                   </div>
                   <div class="col-md-3 col-xl-2 col-4 offset-xl-1 pt-xl-3 pt-2">
                      
@@ -548,26 +550,26 @@ mysqli_close($con);
                     <hr class="boldline mt-4">
                     <div class="row text-center">
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[0];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[0];?>','_self');">
+                        <img src="<?php echo $imgarr3[0];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[0];?>','_self');">
                         <div class="mb-3">
                         <h5 class="text-uppercase my-2"><?php echo $simartistname[0];?></h5>
                         </div>
                       </div>
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[1];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[1];?>','_self');">
+                        <img src="<?php echo $imgarr3[1];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[1];?>','_self');">
                         <div class="mb-3">
                         <h5 class="text-uppercase my-2"><?php echo $simartistname[1];?></h5>
                       </div>
                       </div>
 
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[2];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[2];?>','_self');">
+                        <img src="<?php echo $imgarr3[2];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[2];?>','_self');">
                         <div class="mb-3">
                         <h5 class="text-uppercase my-2"><?php echo $simartistname[2];?></h5>
                       </div>
                       </div>
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[3];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[3];?>','_self');">
+                        <img src="<?php echo $imgarr3[3];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[3];?>','_self');">
                         <div class="mb-3">
                        <h5 class="text-uppercase my-2"><?php echo $simartistname[3];?></h5>
                       </div>
@@ -575,13 +577,13 @@ mysqli_close($con);
 
 
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[4];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[4];?>','_self');">
+                        <img src="<?php echo $imgarr3[4];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[4];?>','_self');">
                         <div class="mb-3">
                         <h5 class="text-uppercase my-2"><?php echo $simartistname[4];?></h5>
                       </div>
                       </div>
                       <div class="col-6">
-                        <img src="<?php echo $imgarr3[5];?>" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[5];?>','_self');">
+                        <img src="<?php echo $imgarr3[5];?>" style="cursor: pointer" class="img-fluid rounded-circle mt-2"  onclick="window.open('artist2.php?artist=<?php echo $simartistname[5];?>','_self');">
                         <div class="mb-3">
                         <h5 class="text-uppercase my-2"><?php echo $simartistname[5];?></h5>
                       </div>

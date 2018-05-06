@@ -5,7 +5,7 @@
 <?php
 
 $artistSlug = $_GET['artist'];
-
+$CURRENT_YEAR = '2018';
 
 $con=mysqli_connect("34.211.39.225","front",'m093423q3238dj2923iqv3t5mp82c4np8yv4bp58ymp9x34@C$@$np87328',"concertb_concertboom");
 // Check connection
@@ -34,21 +34,36 @@ $check =  mysqli_query($con,
 						JOIN ZV_PERFORMER pp on epp.performer_id = pp.performer_id 
 						JOIN ZV_EVENT_PERFORMER ep on e.event_id = ep.event_id 
 						JOIN ZV_PERFORMER p on ep.performer_id = p.performer_id 
-						WHERE pp.performer_slug_cb= '$artistSlug' AND e.event_start_time < curDate() 
+						WHERE pp.performer_slug_cb= '$artistSlug' AND e.event_start_time > curDate() 
 						group by e.event_id 
-						ORDER BY e.event_start_time DESC"
+						ORDER BY e.event_start_time ASC limit 50"
 
  );
 
 $date = array();
 $time = array();
 $city = array();
+$monthNum = array();
+$monthName = array();
+$dateObj = array();
+$event_slug = array();
+
 while ($info = mysqli_fetch_array($check)) {
 	$city[] = $info['city_name'];
 	//$monthCapital = getMonth(substr($date, 5, 2));
 	$date[] = substr($info['event_start_time'] , 0 , 10);
 	//$day = removeZero(substr($date, 8, 2));
 	$time[] = substr($info['event_start_time'], 11 , 5);
+	$monthNum[] = substr($info['event_start_time'] , 5 , 2);
+	$event_slug[] = $info['event_slug'];
+}
+
+
+foreach($monthNum AS $num)
+{
+	$dateObj = DateTime::createFromFormat('!m', $num);
+	$monthName[] = $dateObj->format('F');
+	
 }
 
 mysqli_close($con);
@@ -71,7 +86,8 @@ mysqli_close($con);
 
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-      <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
+      <img src="img/CBlogo.png" width="35" style="border-radius: 30%;">
+      <a class="navbar-brand d-none d-lg-block" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -79,7 +95,7 @@ mysqli_close($con);
       </button>
 
       <ul class="list-inline d-lg-none mb-0 ">
-        <li class="list-inline-item mr-3"><a href="#"><img src="img/filtermobile.png" width="25"></a></li>
+        <!--<li class="list-inline-item mr-3"><a href="#"><img src="img/filtermobile.png" width="25"></a></li>-->
         <li class="list-inline-item"><a><img src="img/searchdesktop.png" width="23" id="searhbutton"></a></li>
       </ul>
       <div class="search-box w-100 d-lg-none">
@@ -91,12 +107,12 @@ mysqli_close($con);
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">San Francisco Concerts <span class="sr-only">(current)</span></a>
+            <!--<a class="nav-link" href="#">San Francisco Concerts <span class="sr-only">(current)</span></a>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Artists</a>
+            <!--<a class="nav-link" href="#">Artists</a>-->
           </li>
-          <li class="nav-item dropdown">
+          <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="img/countrylocation.png" width="10"> Change Location
           </a>
@@ -104,11 +120,11 @@ mysqli_close($con);
           <a class="dropdown-item" href="#">United Kingdom</a>
           <a class="dropdown-item" href="#">USA</a>
           </div>
-          </li>
+          </li>-->
           </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" aria-label="Search">
-          <button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20" class="mt-1"></a></button>
+          <!--<button class="btn my-2 my-sm-0 bg-transparent" type="submit"><img src="img/searchmobile.png" width="20" class="mt-1"></a></button>-->
           <ul class="navbar-nav">
             <li class="nav-item"><a href="#" class="signupButton">Sign Up</a></li>
             <li class="nav-item  mt-2 mt-lg-0"><a href="#" class="loginButton">Log in</a></li>
@@ -119,17 +135,17 @@ mysqli_close($con);
     </nav>
 
 
-    <div class="row no-gutters banner py-5">
+    <div class="row no-gutters banner py-5" style="height:200px;">
       <div class="container">
         <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <img src="<?php echo $image;?>" class="img-fluid rounded-circle" style="width: 300px;">
+        <div class="col-lg-3 col-md-4" style="margin-top: -40px">
+          <img src="<?php echo $image;?>" class="img-fluid rounded-circle" style="width: 180px;">
         </div>
-        <div class="col-lg-6 col-xl-5 col-md-8" style="padding-left: 30px; padding-right: 0px">
-          <h1 class="text-uppercase mt-3 mt-md-0"> <?php echo $artist; ?>  </h1>
+        <div class="col-lg-6 col-xl-5 col-md-8" style="padding-left: 30px; padding-right: 0px; margin-top: -30px">
+          <h1 class="text-uppercase mt-3 mt-md-0" style="font-size: 3em;"> <?php echo $artist; ?>  </h1>
           <h5 class="text-uppercase">2018 tour dates & tickets</h5>
-          <p class="mb-0 d-none d-md-block text-justify pr-lg-5"> <?php echo substr($artistAbout,0,300).'...'; ?> </p>
-          <a href="#" class="text-white d-none d-md-block"><span>+</span> More</a>
+          <p class="mb-0 d-none d-md-block text-justify pr-lg-5"> <?php echo substr($artistAbout,0,150).'...'; ?> </p>
+          <!--<a href="#" class="text-white d-none d-md-block"><span>+</span> More</a>-->
         </div>
       </div>
       </div>
@@ -142,67 +158,45 @@ mysqli_close($con);
         <div class="row">
           <div class="col-md-8 col-lg-9 events-section">
             <div class="d-flex">
-            <h5><img src="img/map-marker.png" width="20"> events near <span>san francisco</span></h5>
-            <h5 class="ml-auto d-none d-md-block"><img src="img/filterdesktop.png" width="25">Filter</h5>
+	    <h5>events</h5>
+            <!--<h5><img src="img/map-marker.png" width="20"> events near <span>san francisco</span></h5>-->
+            <!--<h5 class="ml-auto d-none d-md-block"><img src="img/filterdesktop.png" width="25">Filter</h5>-->
             </div>
             <hr class="boldline">
           <div class="filter-section">
-            <div class="row">
-              <div class="col-3">
-                <span> Day  </span>
-                <h5> <?php echo $date[0]; ?>  </h5>
-                <span> <?php echo $time[0]; ?> </span>
+
+	<?php
+
+	$num=-1;
+	while($num < 49){
+		
+		 $num = $num+1;
+		 ?>
+                 
+
+		<div class="row">
+              <div class="col-4">
+                <span> <?php echo $date[$num]; ?>  </span>
+                <h5>   </h5>
+                <span> <?php echo $time[$num]; ?> </span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5><?php echo $artist; ?></h5>
-                <span> <?php echo $city[0]; ?>  </span>
+                <span> <?php echo $city[$num]; ?>  </span>
               </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
+              <div class="col-4 text-right">
+                <a href="ticket.php?city=<?php echo $city[$num]?>&year=<?php echo $CURRENT_YEAR?>&month=<?php echo $monthName[$num]?>&event_slug=<?php echo $event_slug[$num]?>" class="ticketButton">Tickets</a>
               </div>
 
             </div>
-          <hr>
+          <hr>		
 
-          <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5> <?php echo $date[1]; ?>  </h5>
-                <span> <?php echo $time[1]; ?> </span>
-              </div>
-              <div class="col-3">
+	<?php } ?>
 
-                <h5><?php echo $artist; ?></h5>
-                <span> <?php echo $city[1]; ?>  </span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
 
-            </div>
-
-            <hr>
-
-            <div class="row">
-              <div class="col-3">
-                <span>Day</span>
-                <h5> <?php echo $date[2]; ?> </h5>
-                <span> <?php echo $time[2]; ?> </span>
-              </div>
-              <div class="col-3">
-
-                <h5><?php echo $artist; ?></h5>
-                <span> <?php echo $city[2]; ?>  </span>
-              </div>
-              <div class="col-6 text-right">
-                <a href="#" class="ticketButton">Tickets</a>
-              </div>
-
-            </div>
-            <hr>
-            <div class="text-center mt-3 d-md-none">
-            <a href="#" class="sanfranciscoButton"><h5><img src="img/map-marker.png" width="20"> san francisco</h5></a>
+          <div class="text-center mt-3 d-md-none">
+            <!--<a href="#" class="sanfranciscoButton"><h5><img src="img/map-marker.png" width="20"> san francisco</h5></a>-->
           </div>
           </div>
 
@@ -210,23 +204,23 @@ mysqli_close($con);
           <!-- all events -->
         <div class="mt-5">
           <div class="d-flex">
-            <h5> all events</h5>
+            <!--<h5> all events</h5>-->
 
             </div>
-            <hr class="boldline">
+            <!--<hr class="boldline">-->
           <div class="filter-section">
-            <div class="row">
-              <div class="col-3">
+            <!--<div class="row">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
@@ -234,17 +228,17 @@ mysqli_close($con);
           <hr>
 
           <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
@@ -253,17 +247,17 @@ mysqli_close($con);
             <hr>
 
             <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
@@ -272,17 +266,17 @@ mysqli_close($con);
             <hr>
 
             <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
@@ -291,17 +285,17 @@ mysqli_close($con);
 
 
             <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
@@ -310,25 +304,25 @@ mysqli_close($con);
 
 
             <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span>Day</span>
                 <h5>Date</h5>
                 <span>Time</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
 
                 <h5>Artist</h5>
                 <span>Location</span>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-4 text-right">
                 <a href="#" class="ticketButton">Tickets</a>
               </div>
 
             </div>
-            <hr>
+            <hr> -->
 
-          </div>
-          <h5 class="text-uppercase text-center mt-3 mb-5 mb-md-0">see more</h5>
+          </div> 
+          <!--<h5 class="text-uppercase text-center mt-3 mb-5 mb-md-0">see more</h5>-->
           </div>
 
 
@@ -368,30 +362,30 @@ mysqli_close($con);
               <div class="col-6">
                 <img src=" <?php echo $imgarr[0];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[0];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
                 </div>
               </div>
               <div class="col-6">
                 <img src=" <?php echo $imgarr[1];?> " class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[1];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
               <div class="col-6">
                 <img src="<?php echo $imgarr[2];?>" class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[2];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
               <div class="col-6">
                 <img src="<?php echo $imgarr[3];?>" class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[3];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
@@ -399,15 +393,15 @@ mysqli_close($con);
               <div class="col-6">
                 <img src="<?php echo $imgarr[4];?>" class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[4];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
               <div class="col-6">
                 <img src="<?php echo $imgarr[5];?>" class="img-fluid rounded-circle mt-2" onclick="window.open('artist2.php?artist=<?php echo $simartistname[5];?>','_self');">
                 <div class="mb-3">
-                <span>Date</span><br>
-                <span>Location</span>
+                <span></span><br>
+                <span></span>
               </div>
               </div>
 
